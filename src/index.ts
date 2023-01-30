@@ -92,7 +92,7 @@ export const mapPsOutput = (
   const services = output
     .split(`\n`)
     .filter(nonEmptyString)
-    .filter((_, index) => isQuiet || index > 1)
+    .filter((_, index) => isQuiet || index > 0)
     .map((line) => {
       let nameFragment = line
       let commandFragment = ''
